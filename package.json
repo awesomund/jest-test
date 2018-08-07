@@ -4,15 +4,21 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "react": "16.4.2"
+    "react": "16.4.2",
+    "react-dom": "^16.4.2"
   },
   "devDependencies": {
+    "babel-loader": "7.1.5",
     "babel-preset-env": "1.7.0",
-    "babel-preset-latest": "6.24.1",
-    "jest": "23.4.2"
+    "babel-preset-react": "6.24.1",
+    "copy-webpack-plugin": "^4.5.2",
+    "jest": "23.4.2",
+    "webpack": "4.16.5",
+    "webpack-serve": "2.0.2"
   },
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "start": "webpack-serve"
   },
   "jest": {
     "testEnvironment": "node"
