@@ -21,8 +21,12 @@
     "webpack-serve": "2.0.2"
   },
   "scripts": {
-    "test": "jest --config jest.config.json",
+    "test": "jest --coverage",
     "start": "webpack-serve"
+  },
+  "jest": {
+    "testURL": "http://localhost/",
+    "setupFiles": ["./jest-setup.js"]
   },
   "author": "",
   "license": "ISC"
