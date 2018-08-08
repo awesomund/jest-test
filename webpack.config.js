@@ -30,5 +30,10 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: './react-app/static' }
     ])
-  ]
+  ],
+  devServer: {
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    }
+  },
 };
