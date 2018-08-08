@@ -1,0 +1,4 @@
+{
+  "testURL": "http://localhost/",
+  "setupFiles": ["./jest-setup.js"]
+}

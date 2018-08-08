@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-const App = <div>Hello, world!</div>;
+const App = <div id="app">Hello, world!</div>;
 
-ReactDOM.render(App, document.getElementById('react-root'));
+export default App;

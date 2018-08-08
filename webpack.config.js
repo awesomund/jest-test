@@ -2,7 +2,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: "development",
-  entry: "./react-app/app.jsx",
+  entry: "./react-app/index.jsx",
   output: {
     publicPath: "/",
     //filename: "[name].[hash:8].js"
