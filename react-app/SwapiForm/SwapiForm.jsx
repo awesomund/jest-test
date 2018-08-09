@@ -22,7 +22,7 @@ class SwapiForm extends React.Component {
     }
 
     getSwapiData() {
-        fetch(`https://swapi.co/api/${this.state.query}?format=json`, {
+        return fetch(`https://swapi.co/api/${this.state.query}?format=json`, {
             method: 'GET',
             mode: 'cors',
             accept: 'application/json'
@@ -39,8 +39,8 @@ class SwapiForm extends React.Component {
         return (
             <div>
                 <input type="text" id="query" onChange={this.setQuery} value={this.state.query}/>
-                <button type="button" onClick={this.getSwapiData}>Submit</button>
-                <pre>{JSON.stringify(this.state.responseData)}</pre>
+                <button type="button" id="submit-button" onClick={this.getSwapiData}>Submit</button>
+                <pre id="response-data">{JSON.stringify(this.state.responseData)}</pre>
             </div>
         );
     }
